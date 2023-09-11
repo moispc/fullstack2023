@@ -1,0 +1,11 @@
+@import 'global.css';
+/* estilo global para los colores de la página 
+hay 4 colores para mantener el estilo global de la página. El modo de usarlos es:
+var(--color-primario)
+var(--color-secundario)
+var(--color-terciario)
+var(--color-cuaternario)
+
+ejemplo:     <color: var(--color-primario);>
+*/
+
