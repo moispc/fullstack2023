@@ -8,3 +8,99 @@ var(--color-cuaternario)
 
 ejemplo:     <color: var(--color-primario);>
 */
+
+
+body{
+    background-color: rgb(90, 90, 90);
+
+}
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.container-cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 320px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin: 20px auto;
+    background-color: rgb(226, 226, 226);
+}
+
+.card-img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px ;
+
+}
+
+.card-info{
+    width: 100%;
+    text-align: center;
+}
+
+.card-info-description{
+ font-size: 15px;
+ color: #3f3f3f;
+
+}
+
+.card-info--title{
+    font-size: 25px;
+    color: #525252;
+}
+
+.card-info--subTitle{
+    font-size: 20px;
+    color: #595959;
+
+}
+
+hr{
+    width: 80%;
+}
+
+.card-button{
+    width: 70%;
+    height: 35px;
+    background-color: rgb(30, 103, 229);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+@media (min-width: 769px) {
+
+    .card{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .card-img{
+        height: 250px;
+        width: 60%;
+    }
+
+    .card-info-description{
+        width: 90%;
+        margin:20px  auto;
+    }
+    
+    
+}
+  
