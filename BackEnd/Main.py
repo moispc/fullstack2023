@@ -4,3 +4,6 @@ print("Bienvenido a ISPC FOOD")
 print("===============================================================")
 print("===============================================================")
 from Login import *
+
+login_instancia = Login()
+login_instancia.loginfinal()
