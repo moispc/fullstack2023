@@ -8,3 +8,79 @@ var(--color-cuaternario)
 
 ejemplo:     <color: var(--color-primario);>
 */
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #1A1A1A;
+    color: #fff8da;
+}
+
+.logo{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #fff8da;
+}
+
+.logo{
+    display: flex;
+    margin-left: 20px;
+}
+
+.logo img{
+    width: 110px;
+}
+
+.hambur-portada img {
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+}
+
+
+nav a{
+    font-weight: 600;
+    padding-right: 40px;
+    
+}
+
+.nav_barra{
+    display: flex;
+    justify-content: center;
+}
+
+.nav_login{
+    margin-left: 300px;
+}
+
+
+nav a:hover{
+    color: crimson;
+}
+
+section{
+    margin-left: 10px;
+}
+
+
+/* RESPONSIVE */
+/* @media (max-width:700px){
+
+}
+
+@media (width >= 375px) {
+}
+
+@media (375px <= width <= 768px) {  } */
+
+@media (width <= 768px) {
+        .header_basic{
+            flex-direction: column;
+            
+    }
+    nav a{
+        font-size:20px;
+    }
+}
