@@ -14,54 +14,24 @@
     <h1 class="title">Conoce nuestra variedad de comidas.</h1>
 
     <section class="container-cards">
-        <article class="card">
-            <img src="https://picsum.photos/200" class="card-img">
-            <div class="card-info">
-                <h2 class="card-info--title">Título de la comida.</h2>
-                <p class="card-info--subTitle">Ingredientes:</p>
-                <hr class="">
-                <p class="card-info-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit tempore doloremque quasi laborum iusto ea architecto sapiente omnis esse voluptates, maxime explicabo deleniti molestias vitae incidunt quod. Labore, quasi!</p>
-                <div class="card-info--containerButton">
-                    <button class="card-button">Comprar</button>
-                </div>
-            </div>
-        </article>
-        <article class="card">
-            <img src="https://picsum.photos/200" class="card-img">
-            <div class="card-info">
-                <h2 class="card-info--title">Título de la comida.</h2>
-                <p class="card-info--subTitle">Ingredientes:</p>
-                <hr class="">
-                <p class="card-info-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit tempore doloremque quasi laborum iusto ea architecto sapiente omnis esse voluptates, maxime explicabo deleniti molestias vitae incidunt quod. Labore, quasi!</p>
-                <div class="card-info--containerButton">
-                    <button class="card-button">Comprar</button>
-                </div>
-            </div>
-        </article>
-        <article class="card">
-            <img src="https://picsum.photos/200" class="card-img">
-            <div class="card-info">
-                <h2 class="card-info--title">Título de la comida.</h2>
-                <p class="card-info--subTitle">Ingredientes:</p>
-                <hr class="">
-                <p class="card-info-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit tempore doloremque quasi laborum iusto ea architecto sapiente omnis esse voluptates, maxime explicabo deleniti molestias vitae incidunt quod. Labore, quasi!</p>
-                <div class="card-info--containerButton">
-                    <button class="card-button">Comprar</button>
-                </div>
-            </div>
-        </article>
-        <article class="card">
-            <img src="https://picsum.photos/200" class="card-img">
-            <div class="card-info">
-                <h2 class="card-info--title">Título de la comida.</h2>
-                <p class="card-info--subTitle">Ingredientes:</p>
-                <hr class="">
-                <p class="card-info-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero sit tempore doloremque quasi laborum iusto ea architecto sapiente omnis esse voluptates, maxime explicabo deleniti molestias vitae incidunt quod. Labore, quasi!</p>
-                <div class="card-info--containerButton">
-                    <button class="card-button">Comprar</button>
-                </div>
-            </div>
-        </article>
+      <!-- Aca se generará de forma dinamica las cartas atraves de JavaScript.
+     -->
     </section>
-  </body>
+
+    <!-- Modal -->
+    <section id="myModal" class="modal">
+      <article class="modal-content">
+          <span class="close">&times;</span>
+
+          <p class="modal-title">Seleccione la cantidad a comprar:</p>
+          <input class="modal-number" type="number">
+
+          <h2>Confirmar Compra</h2>
+          <p>¿Estás seguro de que deseas comprar este producto?</p>
+          <button class="confirm-button">Confirmar</button>
+      </article>
+  </section>
+
+  <script src="./CartaScript.js" type="module"></script>
+</body>
 </html>
