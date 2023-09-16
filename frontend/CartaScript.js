@@ -9,11 +9,11 @@ const closeModalButton = document.querySelector(".close");
 infoProducts.forEach((product) => {
   // Creación de la tarjeta.
   const cardElement = document.createElement("article");
-  cardElement.classList.add("card");
+  cardElement.classList.add("card-t");
 
   // Estructura de la carta.
   cardElement.innerHTML = `
-    <img src="${product.image}" class="card-img" />
+    <img src="${product.image}" class="card-img-t my-auto" />
     <div class="card-info">
         <h2 class="card-info--title">${product.title}</h2>
         <p class="card-info--subTitle">Ingredientes:</p>
