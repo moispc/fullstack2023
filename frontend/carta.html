@@ -22,15 +22,19 @@
     <section id="myModal" class="modal">
       <article class="modal-content">
           <span class="close">&times;</span>
-
-          <p class="modal-title">Seleccione la cantidad a comprar:</p>
-          <input class="modal-number" type="number">
-
-          <h2>Confirmar Compra</h2>
-          <p>¿Estás seguro de que deseas comprar este producto?</p>
+          <div class="modal-info">
+            <img class="modal-img" src="" alt="" />
+            <h2 class="modal-title">Nombre del producto</h2>
+            <hr>
+            <p class="modal-price"></p>
+            <p class="modal-text">Ingrese la cantidad a comprar.</p>
+            <input class="modal-input" type="number">
+            <h3 class="modal-total"></h3>
+            <p class="modal-textConfirm">¿Desea realizar la compra?</p>
+          </div>
           <button class="confirm-button">Confirmar</button>
       </article>
-  </section>
+    </section>
 
   <script src="./CartaScript.js" type="module"></script>
 </body>
