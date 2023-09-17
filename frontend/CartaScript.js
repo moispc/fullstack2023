@@ -14,11 +14,11 @@ const modalTotal = document.querySelector(".modal-total");
 infoProducts.forEach((product) => {
   // Creación de la tarjeta.
   const cardElement = document.createElement("article");
-  cardElement.classList.add("card");
+  cardElement.classList.add("card-t");
 
   // Estructura de la carta.
   cardElement.innerHTML = `
-    <img src="${product.image}" class="card-img" />
+    <img src="${product.image}" class="card-img-t my-auto" />
     <div class="card-info">
         <h2 class="card-info--title">${product.title}</h2>
         <p class="card-info--subTitle">Ingredientes:</p>
@@ -35,25 +35,25 @@ infoProducts.forEach((product) => {
 
   // Abrir el modal al hacer clic en el botón "Comprar"
   const buyButton = cardElement.querySelector(".card-button");
-  
+
   buyButton.addEventListener("click", () => {
-    
     modalInput.addEventListener("input", () => {
       const inputValue = modalInput.value;
 
-      if( inputValue ) {
+      if (inputValue) {
         const productPrice = product.price;
         const totalPrice = inputValue * productPrice;
-        modalTotal.textContent = `El total de su compra es: $${totalPrice.toFixed(2)}`;
+        modalTotal.textContent = `El total de su compra es: $${totalPrice.toFixed(
+          2
+        )}`;
       } else {
-        modalTotal.textContent = "Ingrese una cantidad válida."; // Manejo de entrada inválida. 
+        modalTotal.textContent = "Ingrese una cantidad válida."; // Manejo de entrada inválida.
       }
-
-    })
+    });
 
     modalImg.src = product.image;
     modalTitle.textContent = product.title;
-    modalPrice.textContent = `El precio del producto es: $${product.price}`; 
+    modalPrice.textContent = `El precio del producto es: $${product.price}`;
 
     modal.style.display = "block";
   });
@@ -70,6 +70,3 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
-
-
-
