@@ -1,9 +1,15 @@
- import { infoProducts } from "./data/ProductsCarta.js";
-//console.log(infoProducts)
+import { infoProducts } from "./data/ProductsCarta.js";
 
 const containerCards = document.querySelector(".container-cards");
+
+// Variables - MODAL.
 const modal = document.getElementById("myModal");
 const closeModalButton = document.querySelector(".close");
+const modalImg = document.querySelector(".modal-img");
+const modalTitle = document.querySelector(".modal-title");
+const modalPrice = document.querySelector(".modal-price");
+const modalInput = document.querySelector(".modal-input");
+const modalTotal = document.querySelector(".modal-total");
 
 infoProducts.forEach((product) => {
   // Creación de la tarjeta.
@@ -29,7 +35,26 @@ infoProducts.forEach((product) => {
 
   // Abrir el modal al hacer clic en el botón "Comprar"
   const buyButton = cardElement.querySelector(".card-button");
+
   buyButton.addEventListener("click", () => {
+    modalInput.addEventListener("input", () => {
+      const inputValue = modalInput.value;
+
+      if (inputValue) {
+        const productPrice = product.price;
+        const totalPrice = inputValue * productPrice;
+        modalTotal.textContent = `El total de su compra es: $${totalPrice.toFixed(
+          2
+        )}`;
+      } else {
+        modalTotal.textContent = "Ingrese una cantidad válida."; // Manejo de entrada inválida.
+      }
+    });
+
+    modalImg.src = product.image;
+    modalTitle.textContent = product.title;
+    modalPrice.textContent = `El precio del producto es: $${product.price}`;
+
     modal.style.display = "block";
   });
 });
