@@ -8,12 +8,19 @@ var(--color-cuaternario)
 
 ejemplo:     <color: var(--color-primario);>
 */
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #1A1A1A;
     color: #fff8da;
 }
+
 
 .logo{
     display: flex;
@@ -60,8 +67,48 @@ nav a:hover{
     color: crimson;
 }
 
-section{
+/* section{
     margin-left: 10px;
+} */
+
+#texto {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#headings{
+    color:#00ADB5;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    width: 50%; 
+    margin: 0 auto;
+    size:2px;
+    width:80%;
+    color: #EEEEEE;
+    box-shadow: 0px 4px 4px rgb(255, 255, 255);
+}
+
+/* Estilo para carrusel */
+.carousel-inner{
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.comentario {
+    color: #1A1A1A;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff8da;
+    border-radius: 10px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+    color: #333; 
 }
 
 
@@ -82,5 +129,16 @@ section{
     }
     nav a{
         font-size:20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .carousel-inner{
+        margin-bottom: 30%;
+        margin-top: 30%;
+    }
+    .comentario {
+        background-size: 150% auto; /* Aumentar el ancho del fondo en dispositivos más pequeños */
     }
 }

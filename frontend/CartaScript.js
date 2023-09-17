@@ -1,6 +1,5 @@
-import { infoProducts } from "./data/ProductsCarta.js";
-
-console.log(infoProducts)
+ import { infoProducts } from "./data/ProductsCarta.js";
+//console.log(infoProducts)
 
 const containerCards = document.querySelector(".container-cards");
 const modal = document.getElementById("myModal");
