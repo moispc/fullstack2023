@@ -117,7 +117,7 @@ hr{
 
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 20px auto;
     padding: 20px;
     width: 70%;
     border-radius: 10px;
@@ -141,17 +141,19 @@ hr{
     cursor: pointer;
 }
 
-.modal-title{
-
-    font-size: 25px;
-
+.modal-img{
+    border-radius: 10px;
 }
 
-.modal-number{
-    width: 100px;
-    padding: 5px;
-    border-radius: 20px;
-    border: solid 2px #ccc;
+.modal-text{
     font-size: 20px;
+}
+
+.modal-input{
+    border-radius: 20px;
+    border: solid 2px rgb(158, 158, 158);
+    width: 100px;
+    padding: 4px 10px;
     outline: none;
+    font-size: 15px;
 }
