@@ -70,3 +70,14 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
+
+
+const cart = document.querySelector(".cart-container")
+
+
+cart.addEventListener("click", ()=>{
+  window.location.href = './checkout.html';
+  
+})
+

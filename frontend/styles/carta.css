@@ -75,6 +75,8 @@ hr {
   font-size: 18px;
 }
 
+
+
 @media (min-width: 769px) {
   .card-t {
     margin: auto;
@@ -147,4 +149,32 @@ hr {
   outline: none;
 
   font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* shopping cart */
+
+
+.cart-container{
+  background-color: rgb(62, 156, 62, .7);
+  width: 80px;
+  height: 80px;
+  margin-top: 175px;
+  margin-left: 15px;
+  border-radius: 50%;
+
+}
+
+.shopping-cart{
+  font-size: 3rem;
+  margin-left: 15px;
 }
