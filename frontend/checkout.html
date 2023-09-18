@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- Bootstrap -->
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    
+    <link rel="stylesheet" href="styles/checkout.css">
+
+</head>
+<body>
+    <header class="header_basic">
+        
+    
+        <div class="container">
+            <nav class="navbar navbar-dark  navbar-expand-md nav_barra">
+                <div class=" navbar container container-fluid" data-bs-theme="dark">
+                    <a class="navbar-brand " href="index.html">
+                        <img src="/Assets/FOOD ISPC.png" class="" style="max-width: 110px;" alt="logo_empanada" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item d-md-none d-lg-inline  text-center">
+                                <a class="nav-link mt-1" aria-current="page" href="index.html">
+                                       <p class="text-link">Inicio</p>
+                                </a>
+                            </li>
+                            <li class="nav-item text-center mt-1">
+                                <a class="nav-link" href="nosotros.html">
+                                    <p class="text-link">Nosotros</p>
+                                </a>
+                            </li>
+                            <li class="nav-item text-center mt-1">
+                                <a class="nav-link" href="contacto.html">
+                                    <p class="text-link">Contacto</p>
+                                    
+                                </a>
+                            </li>
+                            <li class="nav-item text-center mt-1">
+                                <a class="nav-link" href="carta.html">
+                                    <p class="text-link">Carta</p>
+                                    
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item ">
+                                <a class="nav-link" href="carta.html">
+                                    <p class="text-link">Pide Ya!</p>
+                                    
+                                </a>
+                            </li> -->
+                            <li class="nav-item text-center ">
+                                <a class="nav-link " href="login.html">
+                                    <button class="btn btn-primary user-button">Login</button>
+                                   
+                                    
+                                </a>
+                            </li>
+                            <li class="nav-item text-center ">
+                                <a class="nav-link" href="registro.html">
+                                    <button class="btn btn-primary user-button">Registro</button>
+                                   
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>    
+    <div class="container bg-light rounded rounded-3">
+        <h1 class="py-5 inter">Finalizar compra</h1>
+        <div id="multi-step-form-container">
+            <!-- Progress Bar -->
+            <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                <!-- Paso 1 -->
+                <li class="form-stepper-active text-center form-stepper-list" step="1">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle">
+                            <span>1</span>
+                        </span>
+                        <div class="label">Metodo de Entrega</div>
+                    </a>
+                </li>
+                <!-- Paso 2 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>2</span>
+                        </span>
+                        <div class="label text-muted">Método de Pago</div>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Step Wise Form Content -->
+            <form id="userAccountSetupForm" name="userAccountSetupForm" enctype="multipart/form-data" method="POST" >
+                <!-- Contenido paso 1 -->
+                <section id="step-1" class="form-step bg-body-secondary p-1 pt-5 p-sm-5">
+                    <h2 class="font-normal inter text-center text-sm-start">Método de entrega</h2>
+                    <div class="mt-3 row bg">
+                        <div class="col-12 col-md-6">
+                            <div class="bg-light rounded rounded-4 p-4">
+                                <h5><i class="bi bi-person-fill"></i> Datos personales</h5>
+                                <p class="fw-bold">Cerveux@hotmail.com</p>
+                                <p>Nombre: <b>Diego Guzmán</b></p>
+                                <p>Teléfono: <b>152-106458</b></p>
+                                
+
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="bg-light rounded rounded-4 p-4">
+                                <h5>Método de entrega</h5>
+                               
+
+
+                                  <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn unclickable" id="first-method" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="true" aria-controls="multiCollapseExample1 ">Retiro en tienda</button>
+                                    <button type="button" class="btn clickable" id="second-method" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="true"  >Envio a domicilio</button>
+                                  </div>
+
+
+
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                      <div class="collapse show multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                          <h5 class="text-color-terciario inter">ISPC FooD</h5>
+                                          <p class="my-1 inter text-color-cuaternario">Ingram St. 20</p>
+                                          <p class="my-1 inter">New York</p>
+                                          <p class="my-1 inter">USA universe 616</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="collapse  multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                          <p class="my-1 inter text-color-cuaternario fw-bold">Rodriguez del Busto 500</p>
+                                          <p class="my-1 inter">Alto Verde - Córdoba</p>
+                                          <p class="my-1 inter">Argentina</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                    <div class="col mt-3 ">
+                                        <div class="border border-1 rounded rounded-2 py-3 bg-white card-body d-flex flex-wrap justify-content-around">
+
+                                            <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg" class="thumbnail-img m-1" alt="producto">
+                                            <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg" class="thumbnail-img m-1" alt="producto">
+                                
+                                            <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg" class="thumbnail-img m-1" alt="producto">
+                                            
+                                            <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg" class="thumbnail-img m-1" alt="producto">
+                                            
+                                            <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg" class="thumbnail-img m-1" alt="producto">
+                                            
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    
+                                  </div>
+
+                                  <div class="mt-3 w-100">
+                                      <button class="button btn-navigate-form-step form-control" type="button" step_number="2">Métodos de pago</button>
+                                  </div>
+                            </div>
+                            
+
+                        </div>
+                        
+
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Contenido del paso 2 d-none por default --> <!-- d-none -->
+                <section id="step-2" class="form-step  bg-body-secondary d-none p-1 pt-5 p-sm-5">
+                    <h2 class="font-normal inter text-center text-sm-start"><i class="bi bi-credit-card-2-front"></i> Métodos de pago</h2>
+
+                    <div class="mt-3 row bg">
+                        <div class="col-12 col-md-6 my-2">
+                            <div class="bg-light rounded rounded-4 p-4">
+                                <h5><i class="bi bi-person-fill"></i> Datos personales</h5>
+                                <p class="fw-bold">Cerveux@hotmail.com</p>
+                                <p>Nombre: <b>Diego Guzmán</b></p>
+                                <p>Teléfono: <b>152-106458</b></p>
+                                
+
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="col-12 col-md-6 my-2">
+                            <div class="col-12">
+                                <div class="collapse show multi-collapse" id="multiCollapseExample1">
+                                  <div class="bg-light rounded rounded-4 p-4">
+                                    <h5 class="text-color-secundario inter">ISPC FooD</h5>
+                                    <p class="my-1 inter text-color-cuaternario">Ingram St. 20</p>
+                                    <p class="my-1 inter">New York</p>
+                                    <p class="my-1 inter">USA universe 616</p>
+                                  </div>
+                                </div>
+
+                                <div class="collapse  multi-collapse" id="multiCollapseExample1">
+                                  <div class="bg-light rounded rounded-4 p-4">
+                                    <p class="my-1 inter text-color-cuaternario fw-bold">Rodriguez del Busto 500</p>
+                                    <p class="my-1 inter">Alto Verde - Córdoba</p>
+                                    <p class="my-1 inter">Argentina</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+                    </div>
+            
+                    <div class="mt-3 row">
+                        <div class="col-12 rounded rounded-4 my-2">
+                            <div class="col-12 bg-light rounded rounded-4 p-4">
+
+                                
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label inter">Número de tarjeta</label>
+                                    <input type="number" class="form-control" id="credit-number" placeholder="" required>
+                                </div>
+                                
+                                <div class="mb-3 d-flex flex-wrap justify-content-around">
+
+                                    <div class="card-container border rounded rounded-5 ps-2 py-1 m-3">
+                                    <div class="form-check my-auto">
+                                        <input class="form-check-input radio-card" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <img src="assets/tarjetas/visa.png" alt="tarjeta visa" class="tarjeta-img">
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card-container border rounded rounded-5 ps-2 py-1 m-3">
+                                    <div class="form-check my-auto">
+                                        <input class="form-check-input radio-card" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            <img src="assets/tarjetas/amex.png" alt="tarjeta amex" class="tarjeta-img">
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="card-container border rounded rounded-5 ps-2 py-1 m-3">
+                                    <div class="form-check my-auto">
+                                        <input class="form-check-input radio-card" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                            <img src="assets/tarjetas/master.png" alt="tarjeta amex" class="tarjeta-img">
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="card-container border rounded rounded-5 ps-2 py-1 m-3">
+                                    <div class="form-check my-auto">
+                                        <input class="form-check-input radio-card" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                        <label class="form-check-label" for="flexRadioDefault4">
+                                            <img src="assets/tarjetas/naranja.png" alt="tarjeta amex" class="tarjeta-img">
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+
+
+                               
+                                </div>
+
+                                <select class="form-select mb-3 inter" aria-label="Default select example" required >
+                                    <option value="" selected>En cuantas cuotas deseas pagar?</option>
+                                    <option value="1" >Total $ X</option>
+                                    <option value="2">2 cuotas de $ X</option>
+                                    <option value="3">3 cuotas de $ X</option>
+                                </select>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputName1" class="form-label inter">Nombre y Apellido como figura en la tarjeta</label>
+                                    <input type="text" class="form-control inter" id="exampleInputName1" aria-describedby="emailHelp" required>
+                                </div>
+
+                                <div class="PaymentCardDueDate clearfix d-flex align-content-center">
+                                    <label class="FormFieldLabel pull-left inter me-2" for="creditCardpayment-card-0Month">Fecha de Vencimiento</label>
+                                    <p class="payment-card-due-month input text required">
+                                        <select class="form-select" id="creditCardpayment-card-0Month" name="cardExpirationMonth" required>
+                                            <option value="">MM</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                    </p>
+                                    <p class="payment-card-lash mx-1">/</p>
+                                    <p class="payment-card-due-year input text required">
+                                        <select class="form-select" id="creditCardpayment-card-0Year" name="cardExpirationYear" required>
+                                            <option value="">AA</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                            <option value="32">32</option>
+                                            <option value="33">33</option>
+                                            <option value="34">34</option>
+                                            <option value="35">35</option>
+                                            <option value="36">36</option>
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40">40</option>
+                                            <option value="41">41</option>
+                                            <option value="42">42</option>
+                                            <option value="43">43</option>
+                                            <option value="44">44</option>
+                                            <option value="45">45</option>
+                                            <option value="46">46</option>
+                                            <option value="47">47</option>
+                                        </select>
+                                    </p>
+                                </div>
+
+                               
+                                <p class="mb-3 codigo-tarjeta">
+                                    <label for="exampleInputEmail1 inter" class="form-label">Código de seguridad</label>
+                                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                                </p>
+                               
+
+
+                                
+
+                                
+                                  
+                            </div>
+
+                            
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="1">volver</button>
+                        <button class="button submit-btn" type="submit" onclick="prueba2()">Comprar</button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    
+    
+</body>
+</html>
