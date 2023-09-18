@@ -94,7 +94,7 @@ store.addEventListener("click", ()=>{
 }) 
 
 
-const purchaseBtn = document.querySelector(".submit-btn");
+const purchaseBtn = document.querySelector("#checkoutForm");
 
 purchaseBtn.addEventListener("submit", (event) => {
     console.log("entro");
@@ -102,9 +102,3 @@ purchaseBtn.addEventListener("submit", (event) => {
     window.location.href = './exito.html';
 
 });
-
-const prueba2 = (e)=> {
-    window.location.href = './exito.html';
-    console.log("entro");
-    e.preventDefault()
-}
