@@ -11,6 +11,38 @@ body{
     background-color: var(--color-cuaternario);
 }
 
+.text-color-primario{
+    color: var(--color-primario);
+}
+
+.text-color-secundario{
+    color: var(--color-secundario);
+}
+
+.text-color-terciario{
+    color: var(--color-terciario);
+}
+
+.text-color-cuaternario{
+    color: var(--color-cuaternario);
+}
+
+.bg-color-primario{
+    background-color: var(--color-primario);
+}
+
+.bg-color-secundario{
+    background-color: var(--color-secundario);
+}
+
+.bg-color-terciario{
+    background-color: var(--color-terciario);
+}
+
+.bg-color-cuaternario{
+    background-color: var(--color-cuaternario);
+}
+
 
 .logo-img{
     width: 110px;
