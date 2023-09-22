@@ -5,43 +5,59 @@
 export const infoProducts = [
     {
       id: 0,
-      image: "https://picsum.photos/200",
-      title: "Titulo 0",
+      image: {
+        imageURL: "assets/carta/arabes.jpg",
+        imageAlt: "empanadas arabes.",
+      },
+      title: "Empanadas Arabes",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
-      price: 9.99,
+      price: 570,
     },
     {
       id: 1,
-      image: "https://picsum.photos/200",
-      title: "Titulo 1",
+      image: {
+        imageURL: "assets/carta/criolla.jpeg",
+        imageAlt: "empanada criolla.",
+      },
+      title: "Empanadas Criollas",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
-      price: 9.99,
+      price: 570,
     },
     {
       id: 2,
-      image: "https://picsum.photos/200",
-      title: "Titulo 2",
+      image: {
+        imageURL: "assets/carta/j&q.jpeg",
+        imageAlt: "empanadas de jamon y queso.",
+      },
+      title: "Empanadas de J&Q",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
-      price: 9.99,
+      price: 570,
     },
     {
       id: 3,
-      image: "https://picsum.photos/200",
-      title: "Titulo 3",
+      image: {
+        imageURL: "assets/carta/hamburguesa.jpeg",
+        imageAlt: "Hamburguesa.",
+
+      },
+      title: "Hamburguesa",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
-      price: 9.99,
+      price: 3800,
     },
     {
       id: 4,
-      image: "https://picsum.photos/200",
-      title: "Titulo 4",
+      image: {
+        imageURL: "assets/carta/lomito.jpeg",
+        imageAlt: "Lomito.",
+      },      
+      title: "Lomito",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
-      price: 9.99,
+      price: 4500,
     },
   ];
 

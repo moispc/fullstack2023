@@ -1,4 +1,7 @@
 import { infoProducts } from "./data/ProductsCarta.js";
+import { Cart } from "./js/modelos/cart.js";
+import { Sidebar } from "./js/modelos/sidebar.js";
+
 
 const containerCards = document.querySelector(".container-cards");
 
@@ -10,6 +13,24 @@ const modalTitle = document.querySelector(".modal-title");
 const modalPrice = document.querySelector(".modal-price");
 const modalInput = document.querySelector(".modal-input");
 const modalTotal = document.querySelector(".modal-total");
+const modalButton = document.querySelector(".confirm-button")
+
+//Boton checkout - Sidebar
+const checkout = document.querySelector(".btn-pay")
+
+
+const selectedProduct = {
+  id: "",
+  name: "",
+  imageURL: "",
+  price: 0,
+  quantity: 0,
+  total: 0
+}
+
+
+
+
 
 infoProducts.forEach((product) => {
   // Creación de la tarjeta.
@@ -18,7 +39,7 @@ infoProducts.forEach((product) => {
 
   // Estructura de la carta.
   cardElement.innerHTML = `
-    <img src="${product.image}" class="card-img-t my-auto" />
+    <img src="${product.image.imageURL}" class="card-img-t my-auto " alt=${product.image.imageAlt} />
     <div class="card-info">
         <h2 class="card-info--title">${product.title}</h2>
         <p class="card-info--subTitle">Ingredientes:</p>
@@ -37,24 +58,41 @@ infoProducts.forEach((product) => {
   const buyButton = cardElement.querySelector(".card-button");
 
   buyButton.addEventListener("click", () => {
+    modalInput.value = 1
+    modalTotal.textContent = `El total de su compra es: $${product.price.toFixed(
+      2
+    )}`
+
     modalInput.addEventListener("input", () => {
       const inputValue = modalInput.value;
 
       if (inputValue) {
         const productPrice = product.price;
+        selectedProduct.quantity =  Number(inputValue);
+        selectedProduct.price = product.price;
         const totalPrice = inputValue * productPrice;
         modalTotal.textContent = `El total de su compra es: $${totalPrice.toFixed(
           2
         )}`;
+        selectedProduct.total = totalPrice;
+        
       } else {
         modalTotal.textContent = "Ingrese una cantidad válida."; // Manejo de entrada inválida.
       }
     });
 
-    modalImg.src = product.image;
+    
+    
+    modalImg.src = product.image.imageURL;
+    modalImg.alt = product.image.imageAlt;
+    selectedProduct.imageURL = product.image.imageURL;
     modalTitle.textContent = product.title;
+    selectedProduct.name = product.title;
     modalPrice.textContent = `El precio del producto es: $${product.price}`;
-
+    selectedProduct.price = product.price;
+    selectedProduct.quantity = 1;
+    selectedProduct.total = selectedProduct.price * selectedProduct.quantity;
+    selectedProduct.id = product.id;
     modal.style.display = "block";
   });
 });
@@ -72,12 +110,22 @@ window.addEventListener("click", (event) => {
 });
 
 
+const sidebar = new Sidebar();
+const cart = new Cart();
 
-const cart = document.querySelector(".cart-container")
-
-
-cart.addEventListener("click", ()=>{
-  window.location.href = './checkout.html';
-  
+modalButton.addEventListener("click", ()=> {
+  confirmOrder()
+  modal.style.display = "none";
+  modalInput.value = 1
 })
+
+checkout.addEventListener("click", ()=>{
+  sidebar.checkout()
+})
+
+
+const confirmOrder = ()=> {
+  sidebar.showCartButton()
+  cart.addProducto(selectedProduct)
+}
 
