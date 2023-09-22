@@ -32,12 +32,12 @@ export class Sidebar{
     }
 
     closeSideBar(){
-        this.cart.classList.remove('hidden');
+        this.checkLocalStorage()
         this.sideBar.classList.add('hidden')
 
     }
 
-    checkout(){
+    redirectCheckout(){
         window.location.href = 'checkout.html'
     }
 

@@ -119,9 +119,7 @@ modalButton.addEventListener("click", ()=> {
   modalInput.value = 1
 })
 
-checkout.addEventListener("click", ()=>{
-  sidebar.checkout()
-})
+checkout.addEventListener("click", sidebar.redirectCheckout)
 
 
 const confirmOrder = ()=> {
