@@ -4,7 +4,7 @@
 
 export const infoProducts = [
     {
-      id: 0,
+      id: "QNFTNGQ",
       image: {
         imageURL: "assets/carta/arabes.webp",
         imageAlt: "empanadas arabes.",
@@ -16,7 +16,7 @@ export const infoProducts = [
       price: 570,
     },
     {
-      id: 1,
+      id: "XLLC2L1",
       image: {
         imageURL: "assets/carta/criolla.webp",
         imageAlt: "empanada criolla.",
@@ -28,7 +28,7 @@ export const infoProducts = [
       price: 570,
     },
     {
-      id: 2,
+      id: "9J7J9CU",
       image: {
         imageURL: "assets/carta/j&q.webp",
         imageAlt: "empanadas de jamon y queso.",
@@ -40,7 +40,7 @@ export const infoProducts = [
       price: 570,
     },
     {
-      id: 3,
+      id: "LKFSQ6L",
       image: {
         imageURL: "assets/carta/hamburguesa.webp",
         imageAlt: "Hamburguesa.",
@@ -53,7 +53,7 @@ export const infoProducts = [
       price: 3800,
     },
     {
-      id: 4,
+      id: "263BEO3",
       image: {
         imageURL: "assets/carta/lomito.webp",
         imageAlt: "Lomito.",

@@ -120,6 +120,7 @@ const cart = new Cart();
 
 const confirmOrder = ()=> {
   sidebar.showCartButton();
+  sidebar.closeSideBar()
   cart.addProduct(selectedProduct);
   saveToLocalStorage()
   showItems()
