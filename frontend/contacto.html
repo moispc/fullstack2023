@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Contactate con nosotros.">
     <title>Contacto</title>
     <!-- Bootstrap -->
 
@@ -96,37 +99,22 @@ crossorigin="anonymous"
         
         
         
-        
-        
-        <!-- <nav class="nav_barra">
-            <a href="index.html" class="nav_link">Inicio</a> 
-            <a href="#nosotros" class="nav_link">Nosotros</a>   
-            <a href="#carta" class="nav_link">Carta</a> 
-            <a href="#contacto" class="nav_link">Contacto</a>   
-            <a href="#PideYa" class="nav_link">Pide Ya!</a> 
-            <div class="nav_login">
-                <a href="../frontend/login.html" class="nav_link" target="_blank">Ingresar</a> 
-                <a href="../frontend/registro.html" class="nav_link" target="_blank">Soy nuevo</a> 
-            </div> -->
-            <!-- <a href="#">IR SECCIÓN 2</a>
-                <a href="#">IR SECCIÓN 3</a> -->
-                <!-- </nav> -->
-                
-                <!-- <div><img src="/img/empanda portada.png" alt="empanada portada"></div> -->
             </header>
             <main>
                 <div class="container text-center contacto-container bg-color-primario mt-5 py-5 p-sm-5 rounded rounded-3" >
                     <div class="row justify-content-center justify-content-sm-center justify-content-lg-evenly">
                         <div class="col-11 col-sm-10 col-md-6 col-lg-5">
-                <h2 class="titulo-contacto text-color-primario inter text-color-secundario">Contacto</h2>
-                <h5 class="pregunta-contacto text-color-terciario m-3">¿Tenés alguna sugerencia o algún reclamo? Contáctanos hoy mismo.</h5>
-                <h5 class="mail-contacto text-color-terciario m-3">ispcfood@gmail.com</h5>
-                <h5 class="tel-contacto m-3 text-color-terciario">
-                    <a target="_blank" class="text-color-secundario" rel="noreferrer" href="https://wa.link/rccy82"  >
-                        <i class="bi bi-whatsapp"></i>
-                        +54 9 (351) 746-0026
+                <h2 class="titulo-contacto text-color-primario inter text-color-terciario">Contacto</h2>
+                <p class="pregunta-contacto text-color-terciario m-3 h5">¿Tenés alguna sugerencia o algún reclamo? Contáctanos hoy mismo.</p>
+                <p class="mail-contacto text-color-terciario m-3 h5">ispcfood@gmail.com</p>
+                <p class="tel-contacto m-3 text-success h5 ">
+                    <a target="_blank" class="" rel="noreferrer" href="https://wa.link/rccy82"  >
+                        <i class="bi bi-whatsapp text-success"></i>
+                        <span class="text-color-terciario">
+                            +54 9 (351) 746-0026
+                        </span>
                     </a>
-                </h5> 
+                </p> 
             </div>
             
             <div class="col-11 col-sm-10 col-md-6 col-lg-5">
@@ -179,18 +167,18 @@ crossorigin="anonymous"
                         </div>
                         
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-secondary btn-lg bg-color-secundario btn-enviar"  onsubmit="toggleModal()" >Enviar mensaje</button>
+                            <button type="submit" class="btn btn-secondary btn-lg bg-color-secundario btn-enviar text-color-terciario fw-bold"  onsubmit="toggleModal()" >Enviar mensaje</button>
                         </div>
                     </form>
                     
                     <div class="modal-cerveux  z-3 " onclick="toggleModal()">
                         <div class="card success-message bg-color-primario z-3 container" onclick="stopEventPropagation(event)"  >
                             <div class="card-body">
-                                <h5 class="card-title">
+                                <p class="card-title h5">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-all text-color-secundario" viewBox="0 0 16 16">
                                         <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
                                     </svg>
-                                </h5>
+                                </p>
                                 <h6 class="card-subtitle mb-3 text-color-cuaternario" >Mensaje enviado</h6>
                                 <p class="card-text  text-color-cuaternario">Nos estaremos comunicando a la brevedad.</p>
                                 <button class="btn btn-secondary bg-color-secundario" onclick="toggleModal()" >Aceptar</button>

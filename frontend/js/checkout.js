@@ -1,3 +1,5 @@
+import { Cart } from "./modelos/cart.js";
+
 /**
  * Define a function to navigate betweens form steps.
  * It accepts one parameter. That is - step number.
@@ -102,3 +104,47 @@ purchaseBtn.addEventListener("submit", (event) => {
     window.location.href = './exito.html';
 
 });
+
+/* Lógica de lectura del carrito */
+
+const thumbnailContainer = document.querySelector(".thumbnail-container")
+const optionOne = document.querySelector(".una-cuota")
+const optionTwo = document.querySelector(".dos-cuotas")
+const optionThree = document.querySelector(".tres-cuotas")
+
+let total = 0;
+
+
+
+const cart = new Cart();
+
+
+
+
+const getCartInfo = () => {
+
+    cart.listArr.forEach(item => {
+
+        const thumbnailImage = document.createElement("img");
+        thumbnailImage.src = item.image.thumbnail;
+        thumbnailImage.classList.add("thumbnail-img", "m-1");
+        thumbnailImage.alt = item.name
+
+
+        thumbnailContainer.appendChild(thumbnailImage)
+
+        total += item.total;
+
+    })
+
+    total = total.toFixed(2)
+    optionOne.innerHTML = `Total: $ ${total}`
+    optionTwo.innerHTML = `2 cuotas de: $ ${(total/2).toFixed(2)}`
+    optionThree.innerHTML = `3 cuotas de: $ ${(total/3).toFixed(2)}`
+
+
+
+
+}
+
+getCartInfo()

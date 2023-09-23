@@ -59,8 +59,9 @@ body{
     border-color: var(--color-secundario);
     border-radius: 10px !important;
     width: 100px;
-    color: var(--color-primario) ;
-    font-family: 'Roboto', sans-serif;
+    color: var(--color-cuaternario) ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 
 }
 
