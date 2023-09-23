@@ -6,8 +6,9 @@ export const infoProducts = [
     {
       id: 0,
       image: {
-        imageURL: "assets/carta/arabes.jpg",
+        imageURL: "assets/carta/arabes.webp",
         imageAlt: "empanadas arabes.",
+        thumbnail: "assets/carta/arabes_thumbnail.webp"
       },
       title: "Empanadas Arabes",
       description:
@@ -17,8 +18,9 @@ export const infoProducts = [
     {
       id: 1,
       image: {
-        imageURL: "assets/carta/criolla.jpeg",
+        imageURL: "assets/carta/criolla.webp",
         imageAlt: "empanada criolla.",
+        thumbnail: "assets/carta/criolla_tumbnail.webp"
       },
       title: "Empanadas Criollas",
       description:
@@ -28,8 +30,9 @@ export const infoProducts = [
     {
       id: 2,
       image: {
-        imageURL: "assets/carta/j&q.jpeg",
+        imageURL: "assets/carta/j&q.webp",
         imageAlt: "empanadas de jamon y queso.",
+        thumbnail: "assets/carta/j&q_thumbnail.webp"
       },
       title: "Empanadas de J&Q",
       description:
@@ -39,8 +42,9 @@ export const infoProducts = [
     {
       id: 3,
       image: {
-        imageURL: "assets/carta/hamburguesa.jpeg",
+        imageURL: "assets/carta/hamburguesa.webp",
         imageAlt: "Hamburguesa.",
+        thumbnail: "assets/carta/hamburguesa_thumbnail.webp"
 
       },
       title: "Hamburguesa",
@@ -51,8 +55,9 @@ export const infoProducts = [
     {
       id: 4,
       image: {
-        imageURL: "assets/carta/lomito.jpeg",
+        imageURL: "assets/carta/lomito.webp",
         imageAlt: "Lomito.",
+        thumbnail: "assets/carta/lomito_thumbnail.webp"
       },      
       title: "Lomito",
       description:

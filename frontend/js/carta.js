@@ -21,7 +21,7 @@ const modalButton = document.querySelector(".confirm-button")
 const selectedProduct = {
   id: "",
   name: "",
-  imageURL: "",
+  image: {},
   price: 0,
   quantity: 0,
   total: 0
@@ -84,7 +84,7 @@ infoProducts.forEach((product) => {
     
     modalImg.src = product.image.imageURL;
     modalImg.alt = product.image.imageAlt;
-    selectedProduct.imageURL = product.image.imageURL;
+    selectedProduct.image = product.image;
     modalTitle.textContent = product.title;
     selectedProduct.name = product.title;
     modalPrice.textContent = `El precio del producto es: $${product.price}`;
@@ -139,6 +139,7 @@ const deleteLocalStorage = () =>{
 const showItems = () => {
   htmlList.innerHTML = ""
   cart.listArr.length == 0 && sidebar.closeSideBar();
+  
 
         cart.listArr.forEach( item => {
             const cartElement = document.createElement("li");
@@ -146,15 +147,15 @@ const showItems = () => {
             
             cartElement.innerHTML = `<div class="card-content row">
               <div class="img-container col-5 d-flex ">
-                <img src="${item.image}" class="cart-image img-fluid mx-2 my-auto rounded " alt="">
+                <img src="${item.image.thumbnail}" class="cart-image img-fluid mx-2 my-auto rounded " alt="">
               </div>
               <div class="product-description col-7">
-                <h5 class="mb-0 inter mt-2 product-title">${item.name}</h5>
+                <p class="mb-0 inter mt-2 product-title h5">${item.name}</p>
                 <p class="mb-0">Cantidad: ${item.quantity}</p>
-                <p>Total: ${item.total}</p>
+                <p>Total: $ ${item.total}</p>
               </div>
             </div>
-            <button class="delete-item btn position-absolute text-primary-hover"><i class="bi bi-trash"></i></button>`
+            <button class="delete-item btn position-absolute text-primary-hover" aria-label="Eliminar item del carrito"><i class="bi bi-trash"></i></button>`
                 
             htmlList.appendChild(cartElement)
             

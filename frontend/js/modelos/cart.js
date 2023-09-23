@@ -13,8 +13,8 @@ export class Cart{
         return list
     }
 
-    addProduct({id, name, imageURL, quantity, total }){
-        const product = new Product(id, name, imageURL, quantity, total);
+    addProduct({id, name, image, quantity, total }){
+        const product = new Product(id, name, image, quantity, total);
 
         if(!this._list.hasOwnProperty(product.id)){
             this._list[product.id] = product;
