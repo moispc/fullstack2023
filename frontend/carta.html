@@ -17,7 +17,10 @@
 
     <!-- Boostrap icons -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
     <link rel="stylesheet" href="styles/carta.css" />
   </head>
@@ -116,11 +119,8 @@
       <!-- </nav> -->
 
       <!-- <div><img src="/img/empanda portada.png" alt="empanada portada"></div> -->
-
     </header>
     <h1 class="title">Conoce nuestra variedad de comidas.</h1>
-
-    
 
     <section class="container-cards container">
       <!-- Aca se generará de forma dinamica las cartas atraves de JavaScript.
@@ -133,12 +133,12 @@
         <span class="close">&times;</span>
 
         <div class="modal-info">
-          <img class="modal-img" src="" alt="" />
+          <img class="modal-img img-fluid" src="" alt="" />
           <h2 class="modal-title">Nombre del producto</h2>
           <hr />
           <p class="modal-price"></p>
           <p class="modal-text">Ingrese la cantidad a comprar.</p>
-          <input class="modal-input" type="number" />
+          <input class="modal-input" type="number" value="1" min="1" />
           <h3 class="modal-total"></h3>
           <p class="modal-textConfirm">¿Desea realizar la compra?</p>
         </div>
@@ -147,16 +147,36 @@
       </article>
     </section>
 
-    <div class="cart-container fixed-top fixed-bottom">
-      <i class="bi bi-cart-check shopping-cart"></i>
+    <!-- carrito de compras -->
 
-    </div>
+    <button class="cart-container fixed-top fixed-bottom hidden">
+      <i class="bi bi-cart-check shopping-cart"></i>
+    </button>
+
+    <aside class=" ">
+      <div
+        class="sidebar p-2 d-flex flex-column fixed-top hidden"
+      >
+        <button
+          type="button"
+          class="btn-close colapse-sidebar ms-auto mb-5"
+          aria-label="Close"
+        ></button>
+        <div class="sidebar-items">
+          <ul class="shop-list">          
+            
+            <!-- Aqui se mostrarán los productos del carrito -->
+          </ul>
+        </div>
+        <button class="btn btn-pay mt-auto rounded-3 inter">Pagar</button>
+      </div>
+    </aside>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="./CartaScript.js" type="module"></script>
+    <script src="./js/carta.js" type="module"></script>
   </body>
 </html>
