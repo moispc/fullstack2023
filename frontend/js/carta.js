@@ -1,6 +1,6 @@
-import { infoProducts } from "./data/ProductsCarta.js";
-import { Cart } from "./js/modelos/cart.js";
-import { Sidebar } from "./js/modelos/sidebar.js";
+import { infoProducts } from "../data/ProductsCarta.js";
+import { Cart } from "./modelos/cart.js";
+import { Sidebar } from "./modelos/sidebar.js";
 
 
 const containerCards = document.querySelector(".container-cards");
@@ -15,8 +15,7 @@ const modalInput = document.querySelector(".modal-input");
 const modalTotal = document.querySelector(".modal-total");
 const modalButton = document.querySelector(".confirm-button")
 
-//Boton checkout - Sidebar
-const checkout = document.querySelector(".btn-pay")
+
 
 
 const selectedProduct = {
@@ -110,8 +109,78 @@ window.addEventListener("click", (event) => {
 });
 
 
+/* Lógica para el funcionamiento del sidebar y el carrito de compras */
+
+const checkout = document.querySelector(".btn-pay")
+const htmlList = document.querySelector(".shop-list")
+
+
 const sidebar = new Sidebar();
 const cart = new Cart();
+
+const confirmOrder = ()=> {
+  sidebar.showCartButton();
+  cart.addProduct(selectedProduct);
+  saveToLocalStorage()
+  showItems()
+
+}
+
+const saveToLocalStorage = () =>{
+  localStorage.setItem("cart", JSON.stringify(cart.listArr))
+
+}
+
+const deleteLocalStorage = () =>{
+  localStorage.removeItem("cart");
+
+}
+
+const showItems = () => {
+  htmlList.innerHTML = ""
+  cart.listArr.length == 0 && sidebar.closeSideBar();
+
+        cart.listArr.forEach( item => {
+            const cartElement = document.createElement("li");
+            cartElement.classList.add("product-card", "bg-light", "position-relative", "rouded", "rounded-2", "my-2" );
+            
+            cartElement.innerHTML = `<div class="card-content row">
+              <div class="img-container col-5 d-flex ">
+                <img src="${item.image}" class="cart-image img-fluid mx-2 my-auto rounded " alt="">
+              </div>
+              <div class="product-description col-7">
+                <h5 class="mb-0 inter mt-2 product-title">${item.name}</h5>
+                <p class="mb-0">Cantidad: ${item.quantity}</p>
+                <p>Total: ${item.total}</p>
+              </div>
+            </div>
+            <button class="delete-item btn position-absolute text-primary-hover"><i class="bi bi-trash"></i></button>`
+                
+            htmlList.appendChild(cartElement)
+            
+            const deleteButton = cartElement.querySelector(".delete-item");
+
+            deleteButton.addEventListener('click', () => {
+              cart.removeProduct(item.id);
+              if (cart.listArr.length > 0) {
+                saveToLocalStorage()            
+              }else{
+                deleteLocalStorage()
+
+    
+              }
+              showItems() 
+
+            });
+            
+      
+
+        })
+
+}
+
+showItems()
+
 
 modalButton.addEventListener("click", ()=> {
   confirmOrder()
@@ -122,8 +191,6 @@ modalButton.addEventListener("click", ()=> {
 checkout.addEventListener("click", sidebar.redirectCheckout)
 
 
-const confirmOrder = ()=> {
-  sidebar.showCartButton()
-  cart.addProducto(selectedProduct)
-}
+
+
 
