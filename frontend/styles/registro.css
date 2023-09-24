@@ -12,7 +12,7 @@ ejemplo:     <color: var(--color-primario);>
 
 
 .caja__principal-registro{
-    margin-top: 30%;
+    margin-top: 150px;
     border-radius: 15px;
 }
 
