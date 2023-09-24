@@ -1,4 +1,4 @@
-@import 'global.css';
+@import "global.css";
 /* estilo global para los colores de la página 
 hay 4 colores para mantener el estilo global de la página. El modo de usarlos es:
 var(--color-primario)
@@ -9,151 +9,240 @@ var(--color-cuaternario)
 ejemplo:     <color: var(--color-primario);>
 */
 
-body{
-    background-color: rgb(90, 90, 90);
-
+body {
+  background-color: rgb(90, 90, 90);
 }
 
-.title{
-    text-align: center;
-    color: white;
+.title {
+  text-align: center;
+  color: white;
 }
 
-.container-cards{
-
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.card-t{
-    width: 320px;
-    background-size: cover;
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 20px;
-    margin: 20px auto;
-    background-color: rgb(226, 226, 226);
+.card-t {
+  width: 320px;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin: 20px auto;
+  background-color: rgb(226, 226, 226);
 }
 
-.card-img-t{
-    width: 100%;
-    height: 250px;
-    border-radius: 10px ;
-
+.card-img-t {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
 }
 
-.card-info{
-    width: 100%;
-    text-align: center;
+.card-info {
+  width: 100%;
+  text-align: center;
 }
 
-.card-info-description{
- font-size: 15px;
- color: #3f3f3f;
-
+.card-info-description {
+  font-size: 15px;
+  color: #3f3f3f;
 }
 
-.card-info--title{
-    font-size: 25px;
-    color: #525252;
+.card-info--title {
+  font-size: 25px;
+  color: #525252;
 }
 
-.card-info--subTitle{
-    font-size: 20px;
-    color: #595959;
-
+.card-info--subTitle {
+  font-size: 20px;
+  color: #595959;
 }
 
-hr{
-    width: 80%;
+hr {
+  width: 80%;
 }
 
-.card-button{
-    width: 70%;
-    height: 35px;
-    background-color: rgb(30, 103, 229);
-    color: white;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+.card-button {
+  width: 70%;
+  height: 35px;
+  background-color: rgb(30, 103, 229);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
+
 
 
 @media (min-width: 769px) {
+  .card-t {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin-bottom: 20px;
+  }
 
-    .card-t{
-        margin: auto;
-        width: 80%;
-        display: flex;
-        margin-bottom: 20px;
-    }
+  .card-img-t {
+    height: 250px;
+    width: 60%;
+  }
 
-    .card-img-t{
-        height: 250px;
-        width: 60%;
-    }
-
-    .card-info-description{
-        width: 90%;
-        margin:20px  auto;
-    }
-    
-    
+  .card-info-description {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
-  
 
 /* Estilos para el modal */
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto;
-    padding: 20px;
-    width: 70%;
-    border-radius: 10px;
-    text-align: center;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .confirm-button {
-    background-color: rgb(30, 103, 229);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
+  background-color: rgb(30, 103, 229);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .close {
-    top: 10px;
-    right: 15px;
-    font-size: 40px;
-    cursor: pointer;
+  top: 10px;
+  right: 15px;
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.modal-title{
+.modal-img {
+  border-radius: 10px;
+}
 
-    font-size: 25px;
+.modal-text {
+  font-size: 20px;
+}
+
+.modal-input {
+  border-radius: 20px;
+  border: solid 2px rgb(158, 158, 158);
+  width: 100px;
+  padding: 4px 10px;
+  outline: none;
+
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* shopping cart */
+
+
+.cart-container{
+  color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+
+  background-color: rgb(62, 156, 62, .7);
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+
 
 }
 
-.modal-number{
-    width: 100px;
-    padding: 5px;
-    border-radius: 20px;
-    border: solid 2px #ccc;
-    font-size: 20px;
-    outline: none;
-    margin: 20px auto;
-    text-align: center;
+.cart-container.hidden{
+  transform: translate(-500%);
+}
+
+.cart-container:hover{
+  box-shadow: 0 0 10px 5px rgba(10, 207, 37, 0.5);
+}
+
+.shopping-cart{
+  font-size: 2rem;
+}
+
+.sidebar{
+  height: 100vh;
+  width: 300px;
+  background-color: var(--color-secundario);
+  z-index: 1;
+  transition: 1s;
+  box-shadow: 0 0 10px 5px rgba(10, 10, 10, 0.5);
+   
+}
+
+.sidebar.hidden{
+  transform: translate(-500%);
+}
+
+ul.shop-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.product-card{
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  /* height: 120px; */
+
+}
+
+.delete-item{
+  border-radius: 50%;
+  bottom: 2px;
+  right: 2px;
+}
+
+.delete-item:hover{
+  color: red;  
+}
+
+.product-title{
+  height: 45px;
+}
+
+.btn-pay{
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+}
+
+.btn-pay:hover{
+  background-color: var(--color-cuaternario);
+  color: var(--color-primario);
 }

@@ -8,3 +8,47 @@ var(--color-cuaternario)
 
 ejemplo:     <color: var(--color-primario);>
 */
+
+
+a{
+    text-decoration: none;
+}
+
+.input-style{
+    background-color: rgba(0,0,0,0);
+    border-color: var(--color-secundario);
+
+}
+
+.textarea-message{
+    resize: none;
+    height: 150px !important;
+    background-color: rgba(0,0,0,0);
+    border-color: var(--color-secundario);
+
+}
+
+.modal-cerveux{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .modal-cerveux.is-open{
+    display: grid;
+  }
+
+  .success-message{
+    width: 18rem;
+
+  }
+
+
+

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Contactate con nosotros.">
     <title>Contacto</title>
     <!-- Bootstrap -->
 
@@ -12,6 +15,10 @@ rel="stylesheet"
 integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
 crossorigin="anonymous"
 />
+
+    <!-- Bootstrap icon -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="styles/contacto.css">
@@ -26,7 +33,7 @@ crossorigin="anonymous"
             <nav class="navbar navbar-dark  navbar-expand-md nav_barra">
                 <div class=" navbar container container-fluid" data-bs-theme="dark">
                     <a class="navbar-brand " href="index.html">
-                        <img src="/Assets/FOOD ISPC.png" class="" style="max-width: 110px;" alt="logo_empanada" >
+                        <img src="/Assets/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food" >
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -66,14 +73,14 @@ crossorigin="anonymous"
                             <li class="nav-item text-center ">
                                 <a class="nav-link " href="login.html">
                                     <button class="btn btn-primary user-button">Login</button>
-                                   
+                                    
                                     
                                 </a>
                             </li>
                             <li class="nav-item text-center ">
                                 <a class="nav-link" href="registro.html">
                                     <button class="btn btn-primary user-button">Registro</button>
-                                   
+                                    
                                     
                                 </a>
                             </li>
@@ -84,32 +91,109 @@ crossorigin="anonymous"
             </nav>
         </div>
         
-
-
-
-
-
-
-
-
-
-
-        <!-- <nav class="nav_barra">
-            <a href="index.html" class="nav_link">Inicio</a> 
-            <a href="#nosotros" class="nav_link">Nosotros</a>   
-            <a href="#carta" class="nav_link">Carta</a> 
-            <a href="#contacto" class="nav_link">Contacto</a>   
-            <a href="#PideYa" class="nav_link">Pide Ya!</a> 
-            <div class="nav_login">
-                <a href="../frontend/login.html" class="nav_link" target="_blank">Ingresar</a> 
-                <a href="../frontend/registro.html" class="nav_link" target="_blank">Soy nuevo</a> 
-            </div> -->
-            <!-- <a href="#">IR SECCIÓN 2</a>
-            <a href="#">IR SECCIÓN 3</a> -->
-        <!-- </nav> -->
         
-        <!-- <div><img src="/img/empanda portada.png" alt="empanada portada"></div> -->
-    </header> 
+        
+        
+        
+        
+        
+        
+        
+            </header>
+            <main>
+                <div class="container text-center contacto-container bg-color-primario mt-5 py-5 p-sm-5 rounded rounded-3" >
+                    <div class="row justify-content-center justify-content-sm-center justify-content-lg-evenly">
+                        <div class="col-11 col-sm-10 col-md-6 col-lg-5">
+                <h2 class="titulo-contacto text-color-primario inter text-color-terciario">Contacto</h2>
+                <p class="pregunta-contacto text-color-terciario m-3 h5">¿Tenés alguna sugerencia o algún reclamo? Contáctanos hoy mismo.</p>
+                <p class="mail-contacto text-color-terciario m-3 h5">ispcfood@gmail.com</p>
+                <p class="tel-contacto m-3 text-success h5 ">
+                    <a target="_blank" class="" rel="noreferrer" href="https://wa.link/rccy82"  >
+                        <i class="bi bi-whatsapp text-success"></i>
+                        <span class="text-color-terciario">
+                            +54 9 (351) 746-0026
+                        </span>
+                    </a>
+                </p> 
+            </div>
+            
+            <div class="col-11 col-sm-10 col-md-6 col-lg-5">
+                <form id="mail-form" autoComplete="off" >
+                    
+                    <div class="form-floating mb-3">
+                        <input
+                        type="text"
+                        class="form-control input-style"
+                        name="name" id="floatingName"
+                        placeholder="Nombre"
+                        required
+                        />
+                        <label for="floatingName">Nombre</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3 pruebaemail">
+                        <input type="email"
+                                class="form-control input-style"
+                                name="email" id="floatingEmail"
+                                placeholder="nombre@ejemplo.com"
+
+                             
+                                
+                                required />
+                                <label for="floatingEmail">Dirección de mail</label>
+                            </div>
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text"
+                                class="form-control input-style"
+                                name="subject" id="floatingSubject"
+                                placeholder="Subject"
+                                />
+                                <label for="floatingSubject">Asunto</label>
+                            </div>
+                            
+                            <div class="form-floating mb-3">
+        
+                                <textarea
+                                class="form-control textarea-message"
+                                id="floatingMessage"
+                                rows="3"
+                                placeholder="Mensaje"
+                                name="message"
+                                >
+                                
+                            </textarea>
+                            <label for="floatingMessage">Message</label>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-secondary btn-lg bg-color-secundario btn-enviar text-color-terciario fw-bold"  onsubmit="toggleModal()" >Enviar mensaje</button>
+                        </div>
+                    </form>
+                    
+                    <div class="modal-cerveux  z-3 " onclick="toggleModal()">
+                        <div class="card success-message bg-color-primario z-3 container" onclick="stopEventPropagation(event)"  >
+                            <div class="card-body">
+                                <p class="card-title h5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-all text-color-secundario" viewBox="0 0 16 16">
+                                        <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                    </svg>
+                                </p>
+                                <h6 class="card-subtitle mb-3 text-color-cuaternario" >Mensaje enviado</h6>
+                                <p class="card-text  text-color-cuaternario">Nos estaremos comunicando a la brevedad.</p>
+                                <button class="btn btn-secondary bg-color-secundario" onclick="toggleModal()" >Aceptar</button>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
+
 </html>
+
+<!-- di@dsf.com -->
