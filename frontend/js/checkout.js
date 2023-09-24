@@ -85,13 +85,10 @@ const switchButton = ()=>{
 }
 
  address.addEventListener("click", ()=>{
-    /* address.classList.toggle("") */
     switchButton();
 })
 
 store.addEventListener("click", ()=>{
-    /* address.disabled
-    store.disabled = true; */
     switchButton();
 }) 
 
@@ -99,7 +96,6 @@ store.addEventListener("click", ()=>{
 const purchaseBtn = document.querySelector("#checkoutForm");
 
 purchaseBtn.addEventListener("submit", (event) => {
-    console.log("entro");
     event.preventDefault()
     window.location.href = './exito.html';
 
