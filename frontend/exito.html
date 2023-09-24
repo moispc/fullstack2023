@@ -34,14 +34,9 @@
                     </button>
                     <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item d-md-none d-lg-inline  text-center">
+                            <li class="nav-item text-center">
                                 <a class="nav-link mt-1" aria-current="page" href="index.html">
                                        <p class="text-link">Inicio</p>
-                                </a>
-                            </li>
-                            <li class="nav-item text-center mt-1">
-                                <a class="nav-link" href="nosotros.html">
-                                    <p class="text-link">Nosotros</p>
                                 </a>
                             </li>
                             <li class="nav-item text-center mt-1">
@@ -56,26 +51,7 @@
                                     
                                 </a>
                             </li>
-                            <!-- <li class="nav-item ">
-                                <a class="nav-link" href="carta.html">
-                                    <p class="text-link">Pide Ya!</p>
-                                    
-                                </a>
-                            </li> -->
-                            <li class="nav-item text-center ">
-                                <a class="nav-link " href="login.html">
-                                    <button class="btn btn-primary user-button">Login</button>
-                                   
-                                    
-                                </a>
-                            </li>
-                            <li class="nav-item text-center ">
-                                <a class="nav-link" href="registro.html">
-                                    <button class="btn btn-primary user-button">Registro</button>
-                                   
-                                    
-                                </a>
-                            </li>
+
                         </ul>
                        
                     </div>
@@ -86,7 +62,7 @@
     </header> 
 
     <main>
-        <div class="container mt-6 mb-7">
+        <div class="container mt-6 mb-7" id="factura">
             <div class="row justify-content-center">
               <div class="col-lg-12 col-xl-7">
                 <div class="card">
@@ -143,26 +119,19 @@
                     <table class="table border-bottom border-gray-200 mt-3">
                       <thead>
                         <tr>
-                          <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm px-0">Descripción</th>
-                          <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm text-end px-0">Monto</th>
+                          <th scope="col" class="fs-sm text-color-terciario px-0">Descripción</th>
+                          <th scope="col" class="fs-sm text-color-terciario text-end px-0">Monto</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td class="px-0">Empanada</td>
-                          <td class="text-end px-0">$2.000.000</td>
-                        </tr>
-                        <tr>
-                          <td class="px-0">Lomito</td>
-                          <td class="text-end px-0">$8.000.000</td>
-                        </tr>
+                      <tbody class="table-container">
+                       <!-- aqui se carga la descripción del carrito -->
                       </tbody>
                     </table>
         
                     <div class="mt-5">
                       <div class="d-flex justify-content-end">
                         <p class="text-muted me-3">Subtotal:</p>
-                        <span>$10.000.000</span>
+                        <span class="subtotal"></span>
                       </div>
                       <div class="d-flex justify-content-end">
                         <p class="text-muted me-3">Descuento:</p>
@@ -170,11 +139,11 @@
                       </div>
                       <div class="d-flex justify-content-end mt-3">
                         <h5 class="me-3">Total:</h5>
-                        <h5 class="text-success">$10.000.000 </h5>
+                        <h5 class="text-success total"></h5>
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn-success"> Imprimir</button>
+                  <button class="btn btn-success imprimir"> Imprimir</button>
                 </div>
               </div>
             </div>
@@ -183,5 +152,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="./js/exito.js"></script>
 </body>
 </html>
