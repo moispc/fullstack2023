@@ -1,4 +1,4 @@
-import { infoProducts } from "../data/ProductsCarta.js";
+import { infoProducts } from "../data/DB.js";
 import { Cart } from "./modelos/cart.js";
 import { Sidebar } from "./modelos/sidebar.js";
 

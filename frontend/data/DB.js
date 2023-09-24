@@ -66,4 +66,71 @@ export const infoProducts = [
     },
   ];
 
+  export const infoDevelopers = [
+    {
+      id:"85XB5Y",
+      name: "Verónica Lúdemann",
+      img: "assets/developers/vero.webp",
+      linkedin: "http://www.linkedin.com/in/veronica-ludemann",
+      github: "https://github.com/veroludemann",
+      portfolio: ""
+    },
+    {
+      id:"8F33UL",
+      name: "Tiziano Mina",
+      img: "assets/developers/tizi.webp",
+      linkedin: "https://www.linkedin.com/in/tiziano-mina/",
+      github: "",
+      portfolio: "https://tiziano-mina.netlify.app/"
+    },
+    {
+      id:"3JS2P1",
+      name: "Gisele Lavisse",
+      img: "assets/developers/gi.webp",
+      linkedin: "https://www.linkedin.com/in/gisele-lavisse-934540246/",
+      github: "https://github.com/gigilvs",
+      portfolio: ""
+    },
+    {
+      id:"RUC42Y",
+      name: "Rocio Garzón",
+      img: "assets/developers/ro.webp",
+      linkedin: "",
+      github: "https://github.com/RoquinG",
+      portfolio: ""
+    },
+    {
+      id:"A8O3KO",
+      name: "Nicolás Luna",
+      img: "assets/developers/nico.webp",
+      linkedin: "https://www.linkedin.com/in/nicolas-luna-632612106/",
+      github: "https://github.com/NicolasLuna12",
+      portfolio: ""
+    },
+    {
+      id:"LUW6LM",
+      name: "Javier Garcia",
+      img: "assets/developers/javi.webp",
+      linkedin: "https://www.linkedin.com/in/garcialuisjavier/",
+      github: "https://github.com/xavi-garcia",
+      portfolio: ""
+    },
+    {
+      id:"SZWGR4",
+      name: "Diego Guzmán",
+      img: "assets/developers/die.webp",
+      linkedin: "https://www.linkedin.com/in/diego-guzm%C3%A1n-cerveux/",
+      github: "https://github.com/cerveux",
+      portfolio: "https://cerveux.dev.ar/"
+    },
+    {
+      id:"IVRK6C",
+      name: "Jimena Galleguillo",
+      img: "assets/developers/jime.webp",
+      linkedin: "",
+      github: "https://github.com/Jimenna",
+      portfolio: ""
+    },
+  ]
+
 
