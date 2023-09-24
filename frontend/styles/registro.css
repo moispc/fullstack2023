@@ -9,18 +9,28 @@ var(--color-cuaternario)
 ejemplo:     <color: var(--color-primario);>
 */
 
-body{ 
-    background-color:#393E46; 
-} 
 
-      .contenedor__todo{
-        width: 100%;
-        position: relative;
 
-    }
+.caja__principal-registro{
+    margin-top: 30%;
+    border-radius: 15px;
+}
 
-  
-    .caja__principal{
+@media only screen and (min-width: 768px) {
+    .caja__principal-registro{
+        border-top-left-radius : 0px;
+        border-bottom-left-radius : 0px;
+
+    }    
+
+}
+
+
+
+
+
+/* 
+.caja__principal{
     margin: 10px;
         width:-300px ;
         height: 200px;
@@ -30,9 +40,9 @@ body{
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background-color: #00ADB5;
-     margin-top: 20%;
-
-    
+        margin-top: 20%;
+        
+        
     }
 
     .caja__principal div{
@@ -107,3 +117,4 @@ top: -55%;
     outline: none;
 }
 
+ */
