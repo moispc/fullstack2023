@@ -11,8 +11,7 @@ export const infoProducts = [
         thumbnail: "assets/carta/arabes_thumbnail.webp"
       },
       title: "Empanadas Arabes",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
+      description: "Masa rellena de una mezcla de carne picada, cebolla, tomate, perejil y especias.",
       price: 570,
     },
     {
@@ -23,8 +22,7 @@ export const infoProducts = [
         thumbnail: "assets/carta/criolla_tumbnail.webp"
       },
       title: "Empanadas Criollas",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
+      description: "Empanada jugosa picante y rellena de carne, huevo duro, aceitunas y ají",
       price: 570,
     },
     {
@@ -35,8 +33,7 @@ export const infoProducts = [
         thumbnail: "assets/carta/j&q_thumbnail.webp"
       },
       title: "Empanadas de J&Q",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
+      description: "Masa rellena con jamón y queso muzarella.",
       price: 570,
     },
     {
@@ -48,8 +45,7 @@ export const infoProducts = [
 
       },
       title: "Hamburguesa",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
+      description: "Burger, tomate, lechuga, cebolla morada, morrón, queso, chimi y mayonesa casera.",
       price: 3800,
     },
     {
@@ -60,8 +56,7 @@ export const infoProducts = [
         thumbnail: "assets/carta/lomito_thumbnail.webp"
       },      
       title: "Lomito",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis eveniet aliquam veniam voluptate enim, pariatur, provident facere praesentium nostrum, similique dicta facilis quidem expedita ducimus soluta ab quos. Neque.",
+      description: "Bife de lomo, tomate, lechuga, jamón, queso, huevo y mayonesa casera.",
       price: 4500,
     },
   ];

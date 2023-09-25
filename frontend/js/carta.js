@@ -40,12 +40,12 @@ infoProducts.forEach((product) => {
   cardElement.innerHTML = `
     <img src="${product.image.imageURL}" class="card-img-t my-auto " alt=${product.image.imageAlt} />
     <div class="card-info">
-        <h2 class="card-info--title">${product.title}</h2>
-        <p class="card-info--subTitle">Ingredientes:</p>
+        <h2 class="card-info--title mb-5">${product.title}</h2>
+      
         <hr />
         <p class="card-info-description">${product.description}</p>
         <div class="card-info--containerButton">
-            <button class="card-button">Comprar</button>
+            <button class="card-button mt-3">Comprar</button>
         </div>
     </div>
     `;
