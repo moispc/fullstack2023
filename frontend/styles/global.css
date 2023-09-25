@@ -82,3 +82,11 @@ body{
 .inter{
     font-family: Inter;
 }
+
+footer{
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color:#00ADB5; 
+} 
