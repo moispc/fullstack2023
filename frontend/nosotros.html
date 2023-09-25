@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce a nuestros desarrolladores.">
     <title>Nosotros</title>
 
                                 <!-- Bootstrap -->
@@ -14,20 +15,20 @@
     crossorigin="anonymous"
     />
 
+                                <!-- Bootstrapp icon -->
+
+                                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
                                 <!-- CSS PROPIO -->
     <link rel="stylesheet" href="styles/nosotros.css">
 </head>
 <body>
     <header class="header_basic">
-        
-        <!-- <div class="logo">
-            <a href="#home"><img src="/Assets/FOOD ISPC.png" alt="logo_empanada" ></a>
-        </div> -->
         <div class="container">
             <nav class="navbar navbar-dark  navbar-expand-md nav_barra">
                 <div class=" navbar container container-fluid" data-bs-theme="dark">
                     <a class="navbar-brand " href="index.html">
-                        <img src="/Assets/FOOD ISPC.png" class="" style="max-width: 110px;" alt="logo_empanada" >
+                        <img src="/frontend/assets/home/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food" >
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,14 +37,9 @@
                     </button>
                     <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item d-md-none d-lg-inline  text-center">
+                            <li class="nav-item text-center">
                                 <a class="nav-link mt-1" aria-current="page" href="index.html">
                                        <p class="text-link">Inicio</p>
-                                </a>
-                            </li>
-                            <li class="nav-item text-center mt-1">
-                                <a class="nav-link" href="nosotros.html">
-                                    <p class="text-link">Nosotros</p>
                                 </a>
                             </li>
                             <li class="nav-item text-center mt-1">
@@ -58,12 +54,6 @@
                                     
                                 </a>
                             </li>
-                            <!-- <li class="nav-item ">
-                                <a class="nav-link" href="carta.html">
-                                    <p class="text-link">Pide Ya!</p>
-                                    
-                                </a>
-                            </li> -->
                             <li class="nav-item text-center ">
                                 <a class="nav-link " href="login.html">
                                     <button class="btn btn-primary user-button">Login</button>
@@ -84,33 +74,20 @@
                 </div>
             </nav>
         </div>
-        
-
-
-
-
-
-
-
-
-
-
-        <!-- <nav class="nav_barra">
-            <a href="index.html" class="nav_link">Inicio</a> 
-            <a href="#nosotros" class="nav_link">Nosotros</a>   
-            <a href="#carta" class="nav_link">Carta</a> 
-            <a href="#contacto" class="nav_link">Contacto</a>   
-            <a href="#PideYa" class="nav_link">Pide Ya!</a> 
-            <div class="nav_login">
-                <a href="../frontend/login.html" class="nav_link" target="_blank">Ingresar</a> 
-                <a href="../frontend/registro.html" class="nav_link" target="_blank">Soy nuevo</a> 
-            </div> -->
-            <!-- <a href="#">IR SECCIÓN 2</a>
-            <a href="#">IR SECCIÓN 3</a> -->
-        <!-- </nav> -->
-        
-        <!-- <div><img src="/img/empanda portada.png" alt="empanada portada"></div> -->
-    </header> 
+    </header>
+    <main>
+        <h1 class="text-center text-color-primario inter">MOiSPC Team</h1>
+        <div class="image-area container d-flex flex-wrap justify-content-center mt-5 list-unstyled">
+            <!-- Aqui se cargarán las cards de cada desarrollador --> 
+        </div>
+    </main>    
+    <footer> 
+        <p>Copyright &copy; 2023 Todos los derechos reservados| Esta pagina fue hecha por MOISPC</p>
+        <a href="nosotros.html"> Conocenos!!!</a>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script type="module" src="./js/nosotros.js"></script>
+
+
 </body>
 </html>

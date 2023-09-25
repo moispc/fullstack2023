@@ -11,6 +11,38 @@ body{
     background-color: var(--color-cuaternario);
 }
 
+.text-color-primario{
+    color: var(--color-primario);
+}
+
+.text-color-secundario{
+    color: var(--color-secundario);
+}
+
+.text-color-terciario{
+    color: var(--color-terciario);
+}
+
+.text-color-cuaternario{
+    color: var(--color-cuaternario);
+}
+
+.bg-color-primario{
+    background-color: var(--color-primario);
+}
+
+.bg-color-secundario{
+    background-color: var(--color-secundario);
+}
+
+.bg-color-terciario{
+    background-color: var(--color-terciario);
+}
+
+.bg-color-cuaternario{
+    background-color: var(--color-cuaternario);
+}
+
 
 .logo-img{
     width: 110px;
@@ -27,8 +59,9 @@ body{
     border-color: var(--color-secundario);
     border-radius: 10px !important;
     width: 100px;
-    color: var(--color-primario) ;
-    font-family: 'Roboto', sans-serif;
+    color: var(--color-cuaternario) ;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 
 }
 
@@ -45,3 +78,15 @@ body{
     margin-top: 10px;
     align-items: center;
 }
+
+.inter{
+    font-family: Inter;
+}
+
+footer{
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color:#00ADB5; 
+} 

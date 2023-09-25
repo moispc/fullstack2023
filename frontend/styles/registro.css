@@ -8,3 +8,123 @@ var(--color-cuaternario)
 
 ejemplo:     <color: var(--color-primario);>
 */
+
+
+
+.caja__principal-registro{
+    margin-top: 150px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .caja__principal-registro{
+        border-top-left-radius : 0px;
+        border-bottom-left-radius : 0px;
+
+    }    
+
+}
+
+
+
+
+
+/* 
+.caja__principal{
+    margin: 10px;
+        width:-300px ;
+        height: 200px;
+        padding: 10px 15px;
+        display: flex;
+        
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: #00ADB5;
+        margin-top: 20%;
+        
+        
+    }
+
+    .caja__principal div{
+        margin: auto;
+        margin-left: 50%;
+        color: white;
+        transition: all 500ms;
+      
+    }
+    
+
+    
+.caja__principal div h2{
+    font-weight: 10;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.caja__principal div h3{
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 24px;
+}
+
+
+
+.contenedor__registro{
+    position: absolute;
+top: -55%;
+    left: 15%;
+    right: 40%;
+    width: 50%;
+    max-width: 380px;
+ }
+
+ .contenedor__registro form{
+    width: 100%;
+    margin: auto;
+    margin-top:500px;
+    margin-left: 150px;
+    padding: 20px 40px;
+    background:  #e6ebedf7;
+    position: absolute;
+    border-radius: 20px;
+}
+
+ .contenedor__registro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ADB5;;
+}
+.contenedor__registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #00ADB5;;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+ */
+
+ footer{
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color:#00ADB5; 
+
+} 
+
