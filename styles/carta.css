@@ -197,6 +197,7 @@ hr {
 
 .sidebar{
   height: 100vh;
+  height: 100dvh;
   width: 300px;
   background-color: var(--color-secundario);
   z-index: 1;
