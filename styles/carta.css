@@ -201,7 +201,7 @@ hr {
   width: 300px;
   background-color: var(--color-secundario);
   z-index: 1;
-  transition: 1s;
+  transition: transform 1s;
   box-shadow: 0 0 10px 5px rgba(10, 10, 10, 0.5);
    
 }
