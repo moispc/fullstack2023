@@ -228,3 +228,9 @@ input::-webkit-inner-spin-button {
 .codigo-tarjeta{
     width: 150px;
 }
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+} 

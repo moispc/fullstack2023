@@ -246,3 +246,9 @@ li.product-card{
   background-color: var(--color-cuaternario);
   color: var(--color-primario);
 }
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+} 

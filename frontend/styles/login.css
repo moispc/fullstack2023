@@ -64,4 +64,9 @@ ejemplo:     <color: var(--color-primario);>
       width: 146px;
 
     }
-
+    footer{
+      padding-top: 20px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+  } 
+  

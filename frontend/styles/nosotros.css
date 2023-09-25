@@ -91,3 +91,9 @@ ejemplo:     <color: var(--color-primario);>
 .img-wrapper ul li i:hover{
 	color: var(--color-primario);
 }
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+} 
