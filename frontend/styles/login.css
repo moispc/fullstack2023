@@ -9,6 +9,10 @@ var(--color-cuaternario)
 ejemplo:     <color: var(--color-primario);>
 */
 
+main{
+  min-height: calc(100vh - 278px);
+}
+
   .contenedor__todo{
         width: 100%;
         max-width: 800px;
@@ -40,7 +44,6 @@ ejemplo:     <color: var(--color-primario);>
       margin-top: 20px;
       padding: 10px;
       border: none;
-      background: #fefeffdd;
       font-size: 16px;
       outline: none;
     }
@@ -59,15 +62,23 @@ ejemplo:     <color: var(--color-primario);>
       background: #00ADB5;;
       font-weight: 600;
       cursor: pointer;
-      color: white;
+      /* color: white; */
       outline: none;
       width: 146px;
-
+      transition: .5s;
     }
+
+    .contenedor__registro form button:hover{
+      background: var(--color-cuaternario);;
+   
+    }
+
     footer{
       padding-top: 20px;
       text-align: center;
       font-family: 'Roboto', sans-serif;
       background-color:#00ADB5; 
-  } 
+  }
+
+  
   

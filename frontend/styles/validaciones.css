@@ -1,0 +1,23 @@
+.label{
+    color: red;
+  }
+
+  .input-message-error {
+    display: none;
+  }
+
+  .input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  ::placeholder {
+    color: red; 
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: red;
+  }

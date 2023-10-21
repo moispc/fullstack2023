@@ -16,6 +16,10 @@ ejemplo:     <color: var(--color-primario);>
     border-radius: 15px;
 }
 
+main{
+    min-height: calc(100vh - 278px);
+}
+
 @media only screen and (min-width: 768px) {
     .caja__principal-registro{
         border-top-left-radius : 0px;
