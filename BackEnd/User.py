@@ -1,5 +1,5 @@
 from Read import *
-
+from ScriptDB import *
 
 class User:
      def __init__(self):
@@ -13,7 +13,12 @@ class User:
         print("Sesion Iniciada como Usuario")
         print("===============================================================")
         print("===============================================================")
-
+        user = input("Ingrese su usuario de MySQL: ")
+        password = input("Ingrese su contraseña de MySQL: ")
+        print("===============================================================")
+        
+        mi_objeto = Conexion(user, password, 'food_ispc')
+        mi_objeto.infoconect()
 
         while True:
                 try:
@@ -22,13 +27,9 @@ class User:
                 
                     
                     if option == 1:
-                        nombre = input("Ingrese el nombre del producto:\n")
-                        #LOGICA PARA LEER UN PRODUCTO
-                        #producto = Read()
-                        #producto.inforequest()
-                        #print("Producto encontrado: ",producto.articulo,"Con exito")
-                        print("===============================================================")
-                        print(f'Producto encontrado: {nombre} Con exito')
+                        mi_objeto = Read(user,password)
+                        mi_objeto.inforead()                       
+                        print("===============================================================")                        
                         print("VOLVIENDO AL MENU PRINCIPAL...")
                         print("===============================================================")
 
@@ -40,12 +41,12 @@ class User:
 
                     else:
                         print("===============================================================")
-                        print("Ingrese una opcion correcta!!!\nNumeros del 1 al 4!!!")
+                        print("Ingrese una opcion correcta!!!\nNumeros del 1 al 2!!!")
                         print("===============================================================")  
 
                 except ValueError as e:
                     #MANEJO DE ERROR PARA DEPURAR HABILITAR DE SER NECESARIO
                     #print("Error: ",e)
                     print("===============================================================")
-                    print("Ingrese una opcion correcta\nNumero del 1 al 4 Y solo numeros por favor!!!")
+                    print("Ingrese una opcion correcta\nNumero del 1 al 2 Y solo numeros por favor!!!")
                     print("===============================================================")

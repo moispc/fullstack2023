@@ -1,7 +1,10 @@
+from ScriptDB import *
 from Create import *
 from Read import *
 from Update import *
 from Delete import *
+
+
 
 class Admin:
     def __init__(self):
@@ -14,8 +17,12 @@ class Admin:
         print("Bienvenido al programa editor de ISPC FOOD")
         print("Sesion Iniciada como Administrador")
         print("===============================================================")
-
-
+        user = input("Ingrese su usuario de MySQL: ")
+        password = input("Ingrese su contraseña de MySQL: ")
+        print("===============================================================")
+        
+        mi_objeto = Conexion(user, password, 'food_ispc')
+        mi_objeto.infoconect()
         while True:
                 try:
                     print("Menu de opciones")
@@ -25,57 +32,34 @@ class Admin:
                             "4)Eliminar Productos\n5)Salir\nSu opcion ==>"))
                 
                     
-                    if option == 1:
-                        nombre = input("Ingrese el nombre del producto:\n")
-                        precio = float(input("Ingrese el precio del producto:\n"))
-                        peso = float (input("Ingrese el peso del producto:\n"))
-                        #LOGICA PARA CREAR UN PRODUCTO
-                        #producto = Create(nombre,precio,peso)
-                        #producto.inforequest()
-                        print("\n" * 25)
-                        print("===============================================================")
-                        print(f'Ha Creado el Producto: {nombre} Con exito')
+                    if option == 1:                                                                   
+                        mi_objeto = Create(user,password)
+                        mi_objeto.infocreate()
                         print("===============================================================")
                         print("VOLVIENDO AL MENU PRINCIPAL...")
-
-                    elif option == 2:
-                        nombre = input("Ingrese el nombre del producto:\n")
-                        #LOGICA PARA LEER UN PRODUCTO
-                        #producto = Read()
-                        #producto.inforequest()
-                        #print("Producto encontrado: ",producto.articulo,"Con exito")
-                        print("\n" * 25)
                         print("===============================================================")
-                        print(f'Producto encontrado: {nombre} Con exito')
+                    elif option == 2:
+                        mi_objeto = Read(user,password)
+                        mi_objeto.inforead()
+                        print("===============================================================")   
                         print("VOLVIENDO AL MENU PRINCIPAL...")
                         print("===============================================================")
 
                     elif option == 3:
-                        nombre = input("Ingrese el nombre del producto:\n")
-                        #LOGICA PARA MODIFICAR PRODUCTO
-                        #producto = Update()
-                        #producto.inforequest()
-                        #print("Producto Modificado: ",producto.articulo,"Con exito")
-                        print("\n" * 25)
-                        print("===============================================================")
-                        print(f'Producto Modificado: {nombre} Con exito')
+                        mi_objeto = Update(user,password)
+                        mi_objeto.infoupdate()
+                        print("===============================================================")                       
                         print("VOLVIENDO AL MENU PRINCIPAL...")
                         print("===============================================================")
 
                     elif option == 4:
-                        nombre = input("Ingrese el nombre del producto:\n")
-                        #LOGICA PARA ELIMINAR PRODUCTO
-                        #producto = Delete()
-                        #producto.inforequest()
-                        #print("Producto Eliminado: ",producto.articulo,"Con exito")
-                        print("\n" * 25)
-                        print("===============================================================")
-                        print(f'Producto Eliminado: {nombre} Con exito')
+                        mi_objeto = Delete(user, password)
+                        mi_objeto.infodelete()
+                        print("===============================================================")                       
                         print("VOLVIENDO AL MENU PRINCIPAL...")
                         print("===============================================================")
 
-                    elif option == 5:
-                        print("\n" * 25)
+                    elif option == 5:                        
                         print("===============================================================")
                         print("Gracias por usar el panel de administrador!!!")
                         print("===============================================================")
