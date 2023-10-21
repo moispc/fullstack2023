@@ -32,7 +32,7 @@
           <div class="navbar container container-fluid" data-bs-theme="dark">
             <a class="navbar-brand" href="index.html">
               <img
-                src="./assets/home/logo_v2.png"
+                src="/frontend/assets/home/logo_v2.png"
                 class=""
                 style="max-width: 120px"
                 alt="logo_food"
@@ -73,24 +73,17 @@
                     <p class="text-link">Carta</p>
                   </a>
                 </li>
-                <!-- <li class="nav-item ">
-                                <a class="nav-link" href="carta.html">
-                                    <p class="text-link">Pide Ya!</p>
-                                    
-                                </a>
-                            </li> -->
-                <li class="nav-item text-center">
-                  <a class="nav-link" href="login.html">
-                    <button class="btn btn-primary user-button">Login</button>
-                  </a>
-                </li>
-                <li class="nav-item text-center">
-                  <a class="nav-link" href="registro.html">
-                    <button class="btn btn-primary user-button">
-                      Registro
-                    </button>
-                  </a>
-                </li>
+                <li class="nav-item text-center ">
+                  <button class="btn btn-primary user-button mt-2 ms-2 d-none" id="nav-login">Login</button>
+              </li>
+              <li class="nav-item text-center ">
+                  <button class="btn btn-primary user-button mt-2 ms-2 d-none" id="nav-registro">Registro</button>
+              </li>
+              <li class="nav-item text-center ">
+                  <button class="btn btn-primary user-button mt-2 ms-2" id="nav-logout">Log Out</button>                                    
+              </li>
+              
+                
               </ul>
             </div>
           </div>
@@ -175,6 +168,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/carta.js" type="module"></script>
+    <script src="./js/navbar.js"></script>
+
  
   
 </body>

@@ -1,9 +1,42 @@
 import { Cart } from "./modelos/cart.js";
 
-/**
- * Define a function to navigate betweens form steps.
- * It accepts one parameter. That is - step number.
- */
+const url = 'https://ispcfood-backend-production.up.railway.app'
+
+const tokenValidation = async () => {
+    
+    const nombres = document.querySelectorAll('.nombre');
+    const mails = document.querySelectorAll('.mail');
+    const telefonos = document.querySelectorAll(".telefono")
+
+
+    
+    const token = localStorage.getItem('token') || '';
+    const user = JSON.parse( localStorage.getItem( 'user' ) )
+
+    if(token.length <= 10 ){
+        window.location.replace('./');
+        throw new Error('Usuario no validado.')
+    }
+    
+
+
+
+    nombres.forEach( nombre => {
+        nombre.innerText = user.nombre
+    })
+
+    mails.forEach( mail => {
+        mail.innerText = user.mail
+    })
+
+    telefonos.forEach( mail => {
+        mail.innerText = user.telefono
+    })
+
+
+
+}
+
 const navigateToFormStep = (stepNumber) => {
     /**
      * Hide all form steps.
@@ -54,9 +87,7 @@ const navigateToFormStep = (stepNumber) => {
         }
     }
 };
-/**
- * Select all form navigation buttons, and loop through them.
- */
+
 document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn) => {
     /**
      * Add a click event listener to the button.
@@ -74,8 +105,10 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
 });
 
 
-const address = document.querySelector("#first-method")
-const store = document.querySelector("#second-method")
+const address = document.querySelector("#first-method");
+const store = document.querySelector("#second-method");
+const logOut = document.querySelector('#logout');
+const purchaseBtn = document.querySelector("#checkoutForm");
 
 const switchButton = ()=>{
     address.classList.toggle("unclickable")
@@ -92,14 +125,16 @@ store.addEventListener("click", ()=>{
     switchButton();
 }) 
 
-
-const purchaseBtn = document.querySelector("#checkoutForm");
-
 purchaseBtn.addEventListener("submit", (event) => {
     event.preventDefault()
     window.location.href = './exito.html';
 
 });
+
+logOut.addEventListener('click', () => {
+    localStorage.clear();
+    window.location = './';
+})
 
 /* Lógica de lectura del carrito */
 
@@ -143,4 +178,11 @@ const getCartInfo = () => {
 
 }
 
-getCartInfo()
+const main = () => {
+    tokenValidation()
+    getCartInfo()
+}
+
+
+main()
+

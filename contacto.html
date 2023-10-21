@@ -30,7 +30,7 @@ crossorigin="anonymous"
             <nav class="navbar navbar-dark  navbar-expand-md nav_barra">
                 <div class=" navbar container container-fluid" data-bs-theme="dark">
                     <a class="navbar-brand " href="index.html">
-                        <img src="./assets/home/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food" >
+                        <img src="/frontend/assets/home/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food" >
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -57,18 +57,13 @@ crossorigin="anonymous"
                                 </a>
                             </li>
                             <li class="nav-item text-center ">
-                                <a class="nav-link " href="login.html">
-                                    <button class="btn btn-primary user-button">Login</button>
-                                    
-                                    
-                                </a>
+                                <button class="btn btn-primary user-button mt-2 ms-2 d-none" id="nav-login">Login</button>
                             </li>
                             <li class="nav-item text-center ">
-                                <a class="nav-link" href="registro.html">
-                                    <button class="btn btn-primary user-button">Registro</button>
-                                    
-                                    
-                                </a>
+                                <button class="btn btn-primary user-button mt-2 ms-2 d-none" id="nav-registro">Registro</button>
+                            </li>
+                            <li class="nav-item text-center ">
+                                <button class="btn btn-primary user-button mt-2 ms-2" id="nav-logout">Log Out</button>                                    
                             </li>
                         </ul>
                        
@@ -179,6 +174,7 @@ crossorigin="anonymous"
     </footer>
     <script src="js/contacto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/navbar.js"></script>
 
 </body>
 

@@ -197,11 +197,10 @@ hr {
 
 .sidebar{
   height: 100vh;
-  height: 100dvh;
   width: 300px;
   background-color: var(--color-secundario);
   z-index: 1;
-  transition: transform 1s;
+  transition: 1s;
   box-shadow: 0 0 10px 5px rgba(10, 10, 10, 0.5);
    
 }
