@@ -18,7 +18,7 @@ class Conexion:
                 print(f"La base de datos '{self.database}' ya existe. No es necesario crearla.")
             else:
                 
-                sql_file = 'E:/Nicolas/Programacion/PROYECTO ISPC/ISPC-year-I/BackEnd/food_ispc.sql'
+                sql_file = './bbdd/food_ispc.sql'
                 with open(sql_file, 'r') as sql_script:
                     sql_statements = sql_script.read()
                 
