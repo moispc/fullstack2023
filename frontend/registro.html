@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="inicio de sesion">
     <title>Registro ISPCFood</title>
     <link rel="stylesheet" type="text/css" href="styles/registro.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous" />
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/validaciones.css">
 
@@ -20,10 +18,10 @@
 </head>
 
 
-<body> 
+<body>
 
     <header class="header_basic">
-        
+
         <!-- <div class="logo">
             <a href="#home"><img src="/Assets/FOOD ISPC.png" alt="logo_empanada" ></a>
         </div> -->
@@ -31,45 +29,45 @@
             <nav class="navbar navbar-dark  navbar-expand-md nav_barra">
                 <div class=" navbar container container-fluid" data-bs-theme="dark">
                     <a class="navbar-brand " href="index.html">
-                        <img src="/frontend/assets/home/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food" >
+                        <img src="/frontend/assets/home/logo_v2.png" class="" style="max-width: 120px;" alt="logo_food">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item text-center">
                                 <a class="nav-link mt-1" aria-current="page" href="index.html">
-                                       <p class="text-link">Inicio</p>
+                                    <p class="text-link">Inicio</p>
                                 </a>
                             </li>
                             <li class="nav-item text-center mt-1">
                                 <a class="nav-link" href="contacto.html">
                                     <p class="text-link">Contacto</p>
-                                    
+
                                 </a>
                             </li>
                             <li class="nav-item text-center mt-1">
                                 <a class="nav-link" href="carta.html">
                                     <p class="text-link">Carta</p>
-                                    
+
                                 </a>
                             </li>
                             <li class="nav-item text-center ">
                                 <button class="btn btn-primary user-button mt-2 ms-2" id="nav-login">Login</button>
                             </li>
                         </ul>
-                       
+
                     </div>
                 </div>
             </nav>
         </div>
-        
 
 
-    </header>    
+
+    </header>
 
 
 <main class="container ">
@@ -77,12 +75,32 @@
     
     <div class="contenedor__todo row mt-5">
 
-        <div class="caja__principal col-12 col-md-6 px-0 order-1 order-md-2 mb-4 ">
-            <div class="caja__principal-registro bg-color-secundario p-3 inter">
-                <h2>¿Aún no tienes cuenta?</h2>
-                <h3>Registrate en el siguiente formulario para que puedas iniciar sesión</h3>
+        <div class="contenedor__todo row">
+
+            <div class="caja__principal col-12 col-md-6 px-0 order-1 order-md-2 mb-4 ">
+                <div class="caja__principal-registro bg-color-secundario p-3 inter">
+                    <h2>¿Aún no tienes cuenta?</h2>
+                    <h3>Registrate en el siguiente formulario para que puedas iniciar sesión</h3>
+                </div>
             </div>
-        </div>
+
+            <!-- <div class="contenedor__registro col-12 col-md-6 bg-color-primario rounded-4 order-2  order-md-1">
+                <form action="" class="formulario__Registro">
+                    <h2 class="text-color-terciario inter text-center my-4">Registrarse</h2>
+                    <input type="text" class="form-control my-2" name="nombre" placeholder="Nombre Completo">
+                    <input type="text" class="form-control my-2" name="Usuario" placeholder="Usuario">
+                    <input type="email" class="form-control my-2" name="email" placeholder="Correo Electronico">
+                    <input type="text" class="form-control my-2" name="Dirección" placeholder="Dirección">
+                    <input type="tel" class="form-control my-2" name="tel" placeholder="Telefóno">
+                    <input type="password" class="form-control my-2" name="contraseña" placeholder="Contraseña">
+                    <input type="password" class="form-control my-2" name="contraseña2"
+                        placeholder="Verifique contraseña">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn bg-color-secundario my-3">Registrarse</button>
+                    </div>
+                </form>
+            </div> 
+        </div>-->
         
         <div class="contenedor__registro col-12 col-md-6 bg-color-primario rounded-4 order-2  order-md-1">
             <form action="" class="formulario__Registro" id="myForm">
@@ -158,12 +176,11 @@
         </div>
     </div>
 </main>
-</div>
 
-<footer> 
-    <p>Copyright &copy; 2023 Todos los derechos reservados| Esta pagina fue hecha por MOISPC.</p>
-    <a href="nosotros.html"> Conocenos!!!</a>
-</footer>
+    <footer>
+        <p>Copyright &copy; 2023 Todos los derechos reservados| Esta pagina fue hecha por MOISPC.</p>
+        <a href="nosotros.html"> Conocenos!!!</a>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="./js/validaciones.js"></script>
@@ -171,4 +188,5 @@
 <script src="./js/create-user.js"></script>
 
 </body>
-    </html>  
+
+</html>
