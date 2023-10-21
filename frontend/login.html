@@ -14,6 +14,7 @@
     crossorigin="anonymous" />
     
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/validaciones.css">
     
 </head>
 
@@ -53,11 +54,7 @@
                                 </a>
                             </li>
                             <li class="nav-item text-center ">
-                                <a class="nav-link" href="registro.html">
-                                    <button class="btn btn-primary user-button">Registro</button>
-                                   
-                                    
-                                </a>
+                                <button class="btn btn-primary user-button mt-2 ms-2 inter" id="nav-registro">Registro</button>
                             </li>
                         </ul>
                        
@@ -73,24 +70,56 @@
 
             
             <div class="contenedor__registro">
-                <form action="" class="formulario__Registro">
-                    <h2>Inicia sesión para realizar tu pedido </h2>
-                    <input type="text" name="Usuario"  placeholder="Usuario" >
-                    <input type="email" name="email" placeholder="Correo Electronico" >
-                    <input type="password" name="contraseña" placeholder="Contraseña">
-                    <div class="button-container d-flex justify-content-center  justify-content-sm-between flex-wrap">
-                        <button > Ingresar </button>
-                        <button > Soy Nuevo </button>
+                <form id="myForm" action="" class="formulario__Registro">
+                    <h2 class="inter">Inicia sesión para realizar tu pedido </h2>
+                    
+                    <div class="mb-3 input-container">
+                        <input type="text" class="form-control input" name="usuario" id="usuario" data-tipo="usuario" placeholder="Usuario" required>
+                        <span class="input-message-error">Este campo no es valido</span>
+                        
                     </div>
+                    
+                    <div class=" mb-3 input-container">
+                        <!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,12}$"   -->
+                        <input name="password" id="password" class="form-control input" type="password" placeholder="Contraseña" data-tipo="password" required>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    
+                    
+                    <div class="button-container d-flex justify-content-center  justify-content-sm-between flex-wrap">
+                        
+                            <button class="btn btn-form inter" type="submit" > Ingresar </button>
+                            <button class="btn btn-form inter" id="btn-registro" > Registro </button>
+                        </div>
                 </form>
             </div>
             
         </div>
+        <div class="modal fade" id="msgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-color-secundario" id="exampleModalLabel">Error</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="inter text-color-cuaternario" id="back-response"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </main>
     <footer> 
         <p>Copyright &copy; 2023 Todos los derechos reservados| Esta pagina fue hecha por MOISPC</p>
         <a href="nosotros.html"> Conocenos!!!</a>
     </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/validaciones.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/login.js"></script>
 
 </body>
 </html>
