@@ -10,6 +10,7 @@ ejemplo:     <color: var(--color-primario);>
 */
 
 
+
 a{
     text-decoration: none;
 }
@@ -55,7 +56,16 @@ a{
     margin-top: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color:#00ADB5; 
+    background-color:#00acb561; 
 } 
+
+#lista {
+    font-size: 2rem;
+}
+
+#conocenoslink{
+    color: #00ADB5;
+    font-size: 1rem;
+}
 
 
