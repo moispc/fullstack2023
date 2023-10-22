@@ -10,7 +10,7 @@ ejemplo:     <color: var(--color-primario);>
 */
 
 main{
-  min-height: calc(100vh - 278px);
+  min-height: calc(100vh - 430px);
 }
 
   .contenedor__todo{
