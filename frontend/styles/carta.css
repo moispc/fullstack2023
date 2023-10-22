@@ -249,7 +249,17 @@ li.product-card{
 
 footer{
   padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  background-color:#00ADB5; 
+  background-color:#00acb561; 
 } 
+
+#lista {
+  font-size: 2rem;
+}
+
+#conocenoslink{
+  color: #00ADB5;
+  font-size: 1rem;
+}
